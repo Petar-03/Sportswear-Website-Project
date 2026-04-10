@@ -82,6 +82,7 @@
   background-position: center;
   min-height: 650px;
   padding: 30px 50px;
+  margin-bottom: 50px;
 }
 
 .hero-content {
@@ -97,7 +98,7 @@
 }
 
 .hero-text {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 50px;
 }
 
@@ -110,8 +111,77 @@
   font-size: 24px;
   font-weight: 700;
   padding: 18px 36px;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
+/*About Us Section*/
+.about-us{
+    margin-inline: 170px;
+    margin-bottom: 50px;
+}
 
+.heading-secondery {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
 
+.title-line {
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title-line span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 3px;
+  background-color: #f4c542;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.about-us-content-box {
+    width: 170%;
+}
+
+.section-text {
+font-size: 28px;
+line-height: 43px;
+}
+
+.about-us-img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    margin-top: 40px;
+}
+
+.features img{
+    width: 100%;
+}
+
+.feat-text {
+    text-align: center;
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.features div {
+    border-right: 1px solid #e5e5e5;
+}
+
+.features div:last-child {
+    border-right: none;
+}
