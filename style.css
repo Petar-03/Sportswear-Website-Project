@@ -80,7 +80,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 650px;
+  height: 650px;
   padding: 30px 50px;
   margin-bottom: 50px;
 }
@@ -185,3 +185,120 @@ line-height: 43px;
 .features div:last-child {
     border-right: none;
 }
+
+/*Products Section*/
+.products-title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 3rem;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.products-title::before,
+.products-title::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    width: 220px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.products-title::before {
+    right: 100%;
+    margin-right: 30px;
+}
+
+.products-title::after {
+    left: 100%;
+    margin-left: 30px;
+}
+
+.products-title span {
+    display: block;
+    width: 110px;
+    height: 3px;
+    margin: 10px auto 0;
+    background-color: #f4c542;
+}
+
+.products-section {
+   background-image: url("./img/products-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 820px;
+  padding: 30px 50px;
+  margin-bottom: 50px; 
+}
+
+.products-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 50px;
+}
+
+.tab-btn {
+    border: 1px solid #333;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background-color: #f4c542;
+    color: #111;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+}
+
+.product-card {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.product-img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-content {
+    padding: 32px 25px;
+}
+
+.product-name {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.product-price {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.shop-btn {
+    border: none;
+    background-color: #f4c542;
+    color: #111;
+    padding: 16px 32px;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
