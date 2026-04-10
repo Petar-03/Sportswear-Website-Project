@@ -1,0 +1,117 @@
+/*Global CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Navigation*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 120px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list .nav-list-item:link,
+.nav-list .nav-list-item:visited {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+  padding: 16px 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-list .nav-list-item::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: calc(100% - 30px);
+  height: 1px;
+  background-color: rgb(255, 196, 0);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-list .nav-list-item:hover::after,
+.nav-list .nav-list-item:active::after {
+  transform: scaleX(1);
+}
+
+.nav-list .nav-list-item:hover,
+.nav-list .nav-list-item:active {
+  color: rgb(255, 255, 255);
+}
+
+.bi {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.bi:hover,
+.bi:active {
+  color: rgb(255, 196, 0);
+  cursor: pointer;
+}
+
+/*Hero Section*/
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url("./img/hero-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 650px;
+  padding: 30px 50px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin-top: 120px;
+  color: white;
+}
+
+.heading-primary {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f4c542;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 18px 36px;
+  border-radius: 6px;
+}
+
+
+
