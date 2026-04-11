@@ -1,3 +1,4 @@
+/*Display and filter products by category*/
 const products = [
   {
     id: 1,
@@ -74,4 +75,42 @@ tabButtons.forEach((button) => {
       renderProducts(filteredProducts);
     }
   });
+});
+
+/*Contact Form Validation*/ 
+const contactForm = document.querySelector("#contact-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const subjectInput = document.querySelector("#subject");
+const messageInput = document.querySelector("#message");
+const formMessage = document.querySelector("#form-message");
+
+contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let nameValue = nameInput.value.trim();
+    let emailValue = emailInput.value.trim();
+    let subjectValue = subjectInput.value.trim();
+    let messageValue = messageInput.value.trim();
+
+    formMessage.classList.remove("error");
+    formMessage.classList.remove("success");
+
+    if (nameValue === "" || nameValue.length < 2) {
+        formMessage.textContent = "Please enter your name.";
+        formMessage.classList.add("error");
+    } else if (emailValue === "" || emailValue.includes("@") === false || emailValue.includes(".") === false) {
+        formMessage.textContent = "Please enter a valid email.";
+        formMessage.classList.add("error");
+    } else if (subjectValue === "") {
+        formMessage.textContent = "Please enter a subject.";
+        formMessage.classList.add("error");
+    } else if (messageValue === "" || messageValue.length < 10) {
+        formMessage.textContent = "Message must be at least 10 characters.";
+        formMessage.classList.add("error");
+    } else {
+        formMessage.textContent = "Message sent successfully!";
+        formMessage.classList.add("success");
+        contactForm.reset();
+    }
 });
