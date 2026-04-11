@@ -61,14 +61,14 @@
   color: rgb(255, 255, 255);
 }
 
-.bi {
+.hamburger {
   color: rgb(255, 255, 255);
   font-size: 26px;
   font-weight: 700;
 }
 
-.bi:hover,
-.bi:active {
+.hamburger:hover,
+.hamburger:active {
   color: rgb(255, 196, 0);
   cursor: pointer;
 }
@@ -233,6 +233,7 @@ line-height: 43px;
   background-position: center;
   height: 820px;
   padding: 30px 50px;
+  margin-bottom: 24.6px
 }
 
 .products-tabs {
@@ -308,7 +309,7 @@ line-height: 43px;
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
-  margin-bottom: 25.6px; 
+  margin-bottom: 24.6px; 
 }
 
 .testimonials-container {
@@ -402,3 +403,63 @@ line-height: 43px;
   transform: scale(1.1);
 }
 
+/*Benefits Section*/
+.benefits-section {
+   background-image: url("./img/products-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.container {
+    margin-inline: 100px;
+    align-items: center;
+}
+
+.grid-four-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.benefit {
+    background-color: #00000079;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.benefit-ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #f4c542;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.benefit-heading {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(206, 206, 206);
+    margin-bottom: 15px;
+}
+
+.benefit-text {
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    border-top: solid 1px #e5e5e5;
+    padding-top: 15px;
+    text-align: center;
+
+}
