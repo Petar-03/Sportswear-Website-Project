@@ -116,7 +116,7 @@
 
 /*About Us Section*/
 .about-us{
-    margin-inline: 170px;
+    margin-inline: 100px;
     margin-bottom: 50px;
 }
 
@@ -146,6 +146,7 @@
 
 .flex-container {
     display: flex;
+    gap: 20px
 }
 
 .about-us-content-box {
@@ -153,7 +154,7 @@
 }
 
 .section-text {
-font-size: 28px;
+font-size: 26px;
 line-height: 43px;
 }
 
@@ -174,7 +175,7 @@ line-height: 43px;
 
 .feat-text {
     text-align: center;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -190,7 +191,7 @@ line-height: 43px;
 .products-title {
     position: relative;
     width: fit-content;
-    margin: 0 auto 3rem;
+    margin: 0 auto 48px;
     color: white;
     font-size: 48px;
     font-weight: 700;
@@ -232,7 +233,6 @@ line-height: 43px;
   background-position: center;
   height: 820px;
   padding: 30px 50px;
-  margin-bottom: 50px; 
 }
 
 .products-tabs {
@@ -300,5 +300,105 @@ line-height: 43px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
+}
+
+/*Reviews Section*/
+.section-testimonials {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  margin-bottom: 25.6px; 
+}
+
+.testimonials-container {
+  padding: 100px;
+}
+
+.testimonials-title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 48px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.testimonials-title::before,
+.testimonials-title::after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    width: 220px;
+    height: 1px;
+    background-color: #e5e5e5;
+}
+
+.testimonials-title::before {
+    right: 100%;
+    margin-right: 30px;
+}
+
+.testimonials-title::after {
+    left: 100%;
+    margin-left: 30px;
+}
+
+.testimonials-title span {
+    display: block;
+    width: 110px;
+    height: 3px;
+    margin: 10px auto 0;
+    background-color: #f4c542;
+}
+
+.reviews-content-text {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.testimonial-image {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.testimonial-text {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.testimonial-name {
+  font-size: 20px;
+  color: #6f6f6f;
+}
+
+.testimonials-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 25px;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
 }
 
