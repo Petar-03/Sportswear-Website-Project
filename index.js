@@ -22,9 +22,9 @@ const products = [
   },
   {
     id: 4,
-    name: "Hooded Jacket",
-    category: "men",
-    price: 49.99,
+    name: "Sports Shorts",
+    category: "women",
+    price: 14.99,
     image: "./img/product-4.png",
   },
   {
@@ -48,7 +48,7 @@ function renderProducts(items) {
         <img src="${product.image}" alt="${product.name}" class="product-img" />
         <div class="product-content">
           <h3 class="product-name">${product.name}</h3>
-          <p class="product-price">$${product.price.toFixed(2)}</p>
+          <p class="product-price">€${product.price.toFixed(2)}</p>
           <button class="shop-btn">Shop Now</button>
         </div>
       </article>

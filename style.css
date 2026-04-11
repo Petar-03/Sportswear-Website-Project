@@ -281,7 +281,7 @@ line-height: 43px;
 }
 
 .product-name {
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 
@@ -296,7 +296,7 @@ line-height: 43px;
     background-color: #f4c542;
     color: #111;
     padding: 16px 32px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     cursor: pointer;
     border-radius: 10px;
