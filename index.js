@@ -39,6 +39,8 @@ const products = [
 
 const productsContainer = document.querySelector(".products-container");
 const tabButtons = document.querySelectorAll(".tab-btn");
+const footerCategoryLinks = document.querySelectorAll(".footer-category-link");
+const productsSection = document.querySelector("#products");
 
 function renderProducts(items) {
   productsContainer.innerHTML = "";
@@ -57,23 +59,50 @@ function renderProducts(items) {
   });
 }
 
+function setActiveTab(category) {
+  tabButtons.forEach((btn) => {
+    btn.classList.remove("active");
+
+    if (btn.dataset.category === category) {
+      btn.classList.add("active");
+    }
+  });
+}
+
+function filterProducts(category) {
+  setActiveTab(category);
+
+  if (category === "all") {
+    renderProducts(products);
+  } else {
+    const filteredProducts = products.filter(
+      (product) => product.category === category
+    );
+    renderProducts(filteredProducts);
+  }
+}
+
 renderProducts(products);
 
 tabButtons.forEach((button) => {
   button.addEventListener("click", function () {
-    tabButtons.forEach((btn) => btn.classList.remove("active"));
-    this.classList.add("active");
+    const category = this.dataset.category;
+    filterProducts(category);
+  });
+});
+
+footerCategoryLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
 
     const category = this.dataset.category;
 
-    if (category === "all") {
-      renderProducts(products);
-    } else {
-      const filteredProducts = products.filter(
-        (product) => product.category === category
-      );
-      renderProducts(filteredProducts);
-    }
+    filterProducts(category);
+
+    productsSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   });
 });
 

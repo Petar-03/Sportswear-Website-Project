@@ -13,7 +13,7 @@
 }
 
 .logo {
-  height: 120px;
+  height: 25px;
 }
 
 .nav-list {
@@ -461,7 +461,6 @@ line-height: 43px;
     border-top: solid 1px #e5e5e5;
     padding-top: 15px;
     text-align: center;
-
 }
 
 /*Contact Section*/
@@ -582,4 +581,79 @@ line-height: 43px;
 .info-text:hover,
 .info-text:active {
 border-bottom: 1px solid #bbbbbb;
+}
+
+/*Footer*/
+hr {
+    margin-bottom: 50px;
+    border: none;
+    height: 1px;
+    background-color: #ebebeb;
+}
+
+.footer {
+  background-image: url("./img/products-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding: 50px 0;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo-footer {
+    height: 40px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.social-links a:link,
+.social-links a:visited {
+    text-decoration: none;
+    font-size: 30px;
+    color:#f4c542;
+}
+
+.logo-col p {
+    font-size: 24px;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-header {
+    color: #f4c542;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.site-links {
+    list-style: none;
+}
+
+.site-links a:link,
+.site-links a:visited {
+text-decoration: none;
+color: white;
+font-size: 24px;
+display: block;
+margin-bottom: 25px;
 }
