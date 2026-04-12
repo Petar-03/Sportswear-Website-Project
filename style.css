@@ -292,15 +292,17 @@ line-height: 43px;
     margin-bottom: 25px;
 }
 
-.shop-btn {
-    border: none;
-    background-color: #f4c542;
-    color: #111;
-    padding: 16px 32px;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 10px;
+.shop-btn:link,
+.shop-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  background-color: #f4c542;
+  color: #111;
+  padding: 16px 32px;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 /*Reviews Section*/
@@ -656,4 +658,465 @@ color: white;
 font-size: 24px;
 display: block;
 margin-bottom: 25px;
+}
+
+/*Media queries, responsive design*/
+/*Below 1200px*/
+@media (max-width: 1200px) {
+  .about-us,
+  .container {
+    margin-inline: 60px;
+  }
+
+  .heading-primary {
+    font-size: 54px;
+  }
+
+  .hero-text {
+    font-size: 26px;
+  }
+
+.products-section {
+    height: auto;
+    padding: 50px;
+  }
+
+  .products-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+.benefits-section {
+    height: auto;
+    padding: 40px;
+  }
+
+  .grid-four-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-container {
+    padding: 50px;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/*Below 992px*/
+@media (max-width: 992px) {
+  .about-us,
+  .container {
+    margin-inline: 40px;
+  }
+
+  .hero {
+    padding: 25px 40px;
+    height: auto;
+    min-height: 650px;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .nav-list .nav-list-item:link,
+  .nav-list .nav-list-item:visited {
+    font-size: 18px;
+    padding: 12px 10px;
+  }
+
+  .heading-primary {
+    font-size: 46px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .about-us-content-box {
+    width: 100%;
+  }
+
+  .section-text {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .features div {
+    border-right: none;
+  }
+
+  .products-section {
+    height: auto;
+    padding: 40px;
+  }
+
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    font-size: 20px;
+    padding: 10px 24px;
+  }
+
+  .testimonials-container {
+    padding: 25.6px 50px;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+  }
+
+  .reviews-content-text {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .benefits-section {
+    height: auto;
+    padding: 70px 0;
+  }
+  
+  .footer {
+    height: auto;
+  }
+}
+
+/*Below 768px*/
+@media (max-width: 768px) {
+  .about-us,
+  .container {
+    margin-inline: 20px;
+  }
+
+  .hero {
+    padding: 20px;
+    min-height: 560px;
+  }
+
+  .logo {
+    height: 22px;
+  }
+
+  .nav-list {
+    gap: 4px;
+  }
+
+  .nav-list .nav-list-item:link,
+  .nav-list .nav-list-item:visited {
+    font-size: 16px;
+    padding: 10px 8px;
+  }
+
+  .heading-primary {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero-text {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+
+  .btn-hero:link,
+  .btn-hero:visited {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+
+  .heading-secondery,
+  .products-title,
+  .testimonials-title {
+    font-size: 32px;
+  }
+
+  .section-text {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .feat-text {
+    font-size: 18px;
+  }
+
+  .products-section {
+    padding: 30px 20px;
+  }
+
+  .product-content {
+    padding: 24px 20px;
+  }
+
+  .product-name {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+
+  .shop-btn:link,
+  .shop-btn:visited {
+    font-size: 16px;
+    padding: 14px 24px;
+  }
+
+  .reviews-content-text {
+    font-size: 26px;
+  }
+
+  .testimonial-image {
+    width: 80px;
+  }
+
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .testimonial-name {
+    font-size: 18px;
+  }
+
+  .benefit {
+    padding: 35px 25px;
+  }
+
+  .benefit-heading {
+    font-size: 21px;
+  }
+
+  .benefit-text {
+    font-size: 18px;
+  }
+
+  .contact-text {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 18px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    padding: 18px 20px;
+  }
+
+  .info-item {
+    align-items: flex-start;
+  }
+
+  .info-text:link,
+  .info-text:visited {
+    font-size: 17px;
+  }
+
+.logo-footer {
+    height: 30px;
+}
+
+  .footer-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .site-links a:link,
+  .site-links a:visited,
+  .logo-col p {
+    font-size: 17px;
+  }
+}
+
+/*Below 576px*/
+@media (max-width: 576px) {
+  .hero {
+    min-height: 500px;
+  }
+
+  .hero-content {
+    margin-top: 80px;
+  }
+
+  .heading-primary {
+    font-size: 28px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  .heading-secondery,
+  .products-title,
+  .testimonials-title {
+    font-size: 28px;
+  }
+
+  .title-line {
+    margin-bottom: 35px;
+  }
+
+  .title-line span,
+  .products-title span,
+  .testimonials-title span {
+    width: 80px;
+  }
+
+  .section-text {
+    font-size: 18px;
+  }
+
+
+  .features img {
+    max-width: 90px;
+    margin: 0 auto;
+  }
+
+  .feat-text {
+    font-size: 14px;
+  }
+
+  .products-tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .reviews-content-text {
+    font-size: 22px;
+  }
+
+  .testimonials-container {
+    padding: 50px 20px;
+  }
+
+  .benefit-ico {
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+  }
+
+  .contact-text {
+    font-size: 18px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    gap: 18px;
+  }
+
+  .contact-info-box {
+    margin: 0 auto;
+    gap: 18px;
+  }
+
+  .contact-ico {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .info-text:link,
+  .info-text:visited {
+    font-size: 16px;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 70px;
+  }
+
+  .social-links {
+    gap: 20px;
+  }
+
+  .social-links a:link,
+  .social-links a:visited {
+    font-size: 24px;
+  }
+
+  .site-links a:link,
+  .site-links a:visited,
+  .logo-col p {
+    font-size: 18px;
+  }
+}
+
+/*Below 456px*/
+@media (max-width: 456px) {
+.testimonials {
+    grid-template-columns: 1fr;
+}
+
+.testimonials-gallery {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-four-cols {
+    grid-template-columns: 1fr;
+}
+
+.footer-header {
+    font-size: 18px;
+}
+
+.site-links a:link,
+  .site-links a:visited,
+  .logo-col p {
+    font-size: 15px;
+  }
+
+.logo-footer {
+    height: 20px;
+}
+}
+
+/*Below 385*/
+@media (max-width: 385px) {
+.products-container {
+    grid-template-columns: 1fr;
+}
+
+.products-container {
+    padding: 0 30px;
+}
 }

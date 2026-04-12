@@ -52,7 +52,7 @@ function renderProducts(items) {
         <div class="product-content">
           <h3 class="product-name">${product.name}</h3>
           <p class="product-price">€${product.price.toFixed(2)}</p>
-          <button class="shop-btn">Shop Now</button>
+          <a href="#contact" class="shop-btn">Shop Now</a>
         </div>
       </article>
     `;
