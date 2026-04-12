@@ -61,16 +61,21 @@
   color: rgb(255, 255, 255);
 }
 
-.hamburger {
-  color: rgb(255, 255, 255);
-  font-size: 26px;
-  font-weight: 700;
+/*Mobile Navigation*/
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
 }
 
-.hamburger:hover,
-.hamburger:active {
-  color: rgb(255, 196, 0);
-  cursor: pointer;
+.icon-mobile-nav {
+  font-size: 30px;
+  color: white;
+}
+
+.closed {
+  display: none;
 }
 
 /*Hero Section*/
@@ -1079,6 +1084,44 @@ margin-bottom: 25px;
   .logo-col p {
     font-size: 18px;
   }
+
+  /*Mobile Nav*/
+.header {
+    flex-direction: row;
+}
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1100;
+  }
+
+  .nav {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(51, 51, 51, 0.9);
+    text-align: center;
+    padding: 4rem 0;
+    transition: top 0.3s ease-in-out;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .header.open-nav .nav {
+    top: 5rem;
+  }
+
+  .header.open-nav .icon-mobile-nav{
+    display: none;
+  }
+  .header.open-nav .closed {
+    display: block;
+  }
+
 }
 
 /*Below 456px*/

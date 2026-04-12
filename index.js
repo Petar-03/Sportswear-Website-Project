@@ -143,3 +143,28 @@ contactForm.addEventListener("submit", function (e) {
         contactForm.reset();
     }
 });
+
+/*Mobile nav*/
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+const navEl = document.querySelector(".nav");
+
+btnNavEl.addEventListener("click", function (e) {
+  e.stopPropagation();
+  headerEl.classList.toggle("open-nav");
+});
+
+document.addEventListener("click", function (e) {
+  const isClickInsideNav = navEl.contains(e.target);
+  const isClickOnBtn = btnNavEl.contains(e.target);
+
+  if (!isClickInsideNav && !isClickOnBtn) {
+    headerEl.classList.remove("open-nav");
+  }
+});
+
+navEl.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    headerEl.classList.remove("open-nav");
+  });
+});
