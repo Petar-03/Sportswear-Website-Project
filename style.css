@@ -242,7 +242,7 @@ line-height: 43px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 820px;
+  height: auto;
   padding: 30px 50px;
   margin-bottom: 24.6px
 }
